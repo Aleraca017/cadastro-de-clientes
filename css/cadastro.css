@@ -116,6 +116,16 @@
   max-height: 70px;
 }
 
+.dados svg{
+  width: 0em;
+  display: none;
+  cursor: pointer;
+}
+
+.m-svg{
+  display: block;
+}
+
 /*campos*/
 
 .id-cliente{
@@ -126,6 +136,8 @@
 .nome-cliente{
   height: 100%;
   flex: 6;
+  display: flex;
+  flex-direction: row;
 }
 
 .numero-cliente{
@@ -142,6 +154,24 @@
   height: 100%;
   flex: 2;
 }
+
+.cora:hover > .edit-delete{
+  flex: 1;
+}
+
+.cora:hover > .edit-delete > svg{
+  display: block;
+  width: 2em;
+}
+
+.edit-delete{
+  height: 100%;
+  flex: 0;
+  transition: .3s;
+  display: flex;
+  justify-content: space-around;
+}
+
 
 .titulos{
   display: flex;
